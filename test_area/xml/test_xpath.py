@@ -1,9 +1,9 @@
 from lxml import etree, objectify
 
-xml = open('factura.xml')
+xml_str= open('factura.xml').read()
 
 import ipdb;ipdb.set_trace()
-document = objectify.XML(xml)
+document = objectify.XML(xml_str)
 # xpath_1 = '//ar:ApplicationResponse/cac:DocumentResponse/cbc:ResponseCode'
 # xpath_2 = '//ar:ApplicationResponse/cac:DocumentResponse/cbc:Description'
 xpath_1 = '//cbc:ResponseCode'
